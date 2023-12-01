@@ -1,0 +1,124 @@
+/* src/components/Home.css */
+/* Styles for the Home component */
+
+.home {
+    
+   
+    
+    padding: 40px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+    position: relative;
+    display: flex;
+}
+
+.home div {
+    width: 50%;
+}
+
+.home h1 {
+    /* display: grid; */
+    
+    font-size: 1.25rem;
+    grid-template-rows: 100px 200px;
+    grid-template-columns: 1fr 2fr;
+    border-color: white;
+    
+   
+   
+}
+
+.home h2 {
+    font-size: 2.25rem;
+    
+   
+   
+   
+}
+
+.home p {
+    font-size: 0.9rem;
+    
+}
+
+
+.highlighted-text {
+    background-image: linear-gradient(to right, rgb(246, 24, 61), lightblue);
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 70px #fff;
+}
+
+/* ////////////////for ipad///////////// */
+
+
+    
+
+/* Updated styles for the specific media query */
+@media (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .home h1 {
+        /* ... */
+        text-align: center;
+        
+        position: static;
+        top: auto;
+        left: auto;
+    }
+
+    .home h2 {
+        /* ... */
+        text-align: center;
+        
+        position: static;
+        top: auto;
+        left: auto;
+    }
+
+    .home p {
+        /* ... */
+        text-align: center;
+        position: static;
+        top: auto;
+        left: auto;
+        padding-top: 5%;
+    }
+
+   
+}
+@media only screen and (max-width: 480px){
+    .home h1 {
+        /* ... */
+        text-align: center;
+        
+        position: static;
+        top: auto;
+        left: auto;
+    }
+
+    .home h2 {
+        /* ... */
+        text-align: center;
+        
+        position: static;
+        top: auto;
+        left: auto;
+    }
+
+    .home p {
+        /* ... */
+        text-align: center;
+        position: static;
+        top: auto;
+        left: auto;
+        padding-top: 20%;
+        padding-left: 0%;
+    }
+
+    
+}
+
+
+
+

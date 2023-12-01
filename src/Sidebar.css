@@ -1,0 +1,69 @@
+/* src/Sidebar.css */
+/* Sidebar styling */
+
+
+
+
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  position: fixed; /* Change to fixed position */
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  padding: 20px;
+  box-shadow: 0 0 10px 1px rgba(255, 223, 88, 0.8);
+  z-index: 100;
+}
+
+
+.icon {
+  font-size: 2rem;
+  color: transparent;
+    background-clip: text; /* Clip the background to the text */
+    background-image: linear-gradient(to right, rgb(246, 24, 61), lightblue);
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+  border-radius: 50%; /* Add border-radius for a circular shape */
+  border: 1px  white;
+  padding: 12px;
+}
+
+.icon:hover {
+  color: #3d40fb; /* Change to your desired glow color */
+  text-shadow: 0 0 10px #f6f6f6; /* Add glow effect */
+}
+
+/* Icon-specific styling */
+.instagram:hover {
+  color: transparent;
+  border: none;
+  background-clip: text; /* Clip the background to the text */
+  background-image: radial-gradient(
+      circle at 30% 107%,
+      #fdf497 0%,
+      #fdf497 5%,
+      #fd5949 45%,
+      #d6249f 60%,
+      #285aeb 90%,
+      #fdf497 0%,
+      #fdf497 5%,
+      #fd5949 45%,
+      #d6249f 60%,
+      #285aeb 90%
+  );
+  transition: color 0.3s ease-in-out;
+}
+
+.linkedin:hover {
+  color: #0077B5;
+  text-shadow: 0 0 10px #f6f6f6;
+}
+
+.github:hover {
+  color: #4078c0;
+  text-shadow: 0 0 10px #f6f6f6;
+}
