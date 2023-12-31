@@ -1,45 +1,79 @@
 /* src/components/Home.css */
 /* Styles for the Home component */
 
-.home {
-    
-   
-    
+
+.home {   
+    display: flex;
+    /* position: relative; */
     padding: 40px;
     text-align: center;
     color: rgb(255, 255, 255);
     background-color: transparent;
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-    position: relative;
-    display: flex;
+    
 }
 
 .home div {
     width: 50%;
+    
+}
+
+.left{
+    
+    padding-left: 5%;
+   
+}
+.right img{
+
+    width: 70%; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    margin-top: -280px; /* Add spacing if needed */
+    margin-left: 25%;
+    
+    
+}
+
+.home h4{
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+    padding-right: 30%;
+    line-height: 0;
+    margin-top: 10%;
+   
 }
 
 .home h1 {
-    /* display: grid; */
-    
-    font-size: 1.25rem;
+    padding-top: 18%;
+    font-size: 2.25rem;
     grid-template-rows: 100px 200px;
     grid-template-columns: 1fr 2fr;
     border-color: white;
+    padding-right: 52%;
+    padding-left: 3%;
+
     
    
    
 }
 
 .home h2 {
-    font-size: 2.25rem;
-    
+    font-size: 3.25rem;
+    padding-right: 31%;
+    margin-top: auto;
+    padding-left: 11%;
    
    
    
 }
 
 .home p {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
+    margin-top: -1%;
+    margin-right: 19% ;
+    padding-left: 12%;
+    text-align: start;
     
 }
 
@@ -49,76 +83,64 @@
     background-clip: text;
     color: transparent;
     text-shadow: 0 0 70px #fff;
+
 }
 
-/* ////////////////for ipad///////////// */
+
+.home .text-wrapper span {
+   
+    display: inline;
+    line-height: 0;
+    margin-top: 15%;
+    background-image: linear-gradient(to right, rgb(246, 24, 61), lightblue);
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 70px #fff;
+    
+  }
+  
+  
+/* //////////////// for ipad///////////// */
 
 
     
 
 /* Updated styles for the specific media query */
-@media (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
+@media only screen and (min-width: 768px) and (max-width: 1440px) {
+    .home {
+      padding: 40px;
+    }
+  
+    .home div {
+      width: 50%;
+    }
+  
+    .left {
+      padding-left: 8%;
+    }
+  
+    .right img {
+      width: 70%;
+      margin-top: -200px;
+      margin-left: 25%;
+    }
+  
     .home h1 {
-        /* ... */
-        text-align: center;
-        
-        position: static;
-        top: auto;
-        left: auto;
+      padding-right: 52%;
+      padding-left: 8%;
     }
-
+  
     .home h2 {
-        /* ... */
-        text-align: center;
-        
-        position: static;
-        top: auto;
-        left: auto;
+      padding-right: 48%;
+      padding-left: 8%;
+      width:max-content ;
+      
     }
-
+  
     .home p {
-        /* ... */
-        text-align: center;
-        position: static;
-        top: auto;
-        left: auto;
-        padding-top: 5%;
+      margin-right: -30%;
+      text-align: start;
+      padding-left: 55px;
     }
-
-   
-}
-@media only screen and (max-width: 480px){
-    .home h1 {
-        /* ... */
-        text-align: center;
-        
-        position: static;
-        top: auto;
-        left: auto;
-    }
-
-    .home h2 {
-        /* ... */
-        text-align: center;
-        
-        position: static;
-        top: auto;
-        left: auto;
-    }
-
-    .home p {
-        /* ... */
-        text-align: center;
-        position: static;
-        top: auto;
-        left: auto;
-        padding-top: 20%;
-        padding-left: 0%;
-    }
-
-    
-}
-
-
-
-
+  }
+  

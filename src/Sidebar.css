@@ -10,7 +10,7 @@
   flex-direction: column;
   position: fixed; /* Change to fixed position */
   left: 0;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
   background-color: transparent;
   padding: 20px;

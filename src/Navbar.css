@@ -1,7 +1,7 @@
 /* src/Navbar.css */
 /* Styling for the Navbar component */
 
-.navbar {
+ .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10,6 +10,20 @@
   color: white;
   font-family: 'Nova Square', sans-serif;
   box-shadow: 0 0 10px 1px rgba(255, 223, 88, 0.8);
+  position:sticky ;
+  z-index: 100;
+  
+} 
+.navbar{
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgb(0, 0, 42);
+  color: white;
+  font-family: 'Nova Square', sans-serif;
+  box-shadow: 0 0 10px 1px rgba(255, 223, 88, 0.8);
+  position:sticky ;
+  justify-content: space-between ;
   
 }
 
@@ -19,6 +33,7 @@
 }
 
 /* Hamburger icon styles */
+
 .hamburger {
   display: none; /* Hide by default on larger screens */
   cursor: pointer;
@@ -33,43 +48,44 @@
   
 }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 3rem;
-}
 
-.nav-links li {
-  margin: 0;
-  
+.nav-links {
+  /* margin: 0; */
+  max-width: 100%;
+  /* background-color: antiquewhite; */
 }
 
 .nav-links a {
   text-decoration: none;
   color: white;
-  
+  cursor: pointer;
+  padding-right: 2rem;
 }
 
 /* Hover effect */
 .nav-links a:hover {
   color: transparent;
-  background-clip: text; /* Clip the background to the text */
+  background-clip: text;
   background-image: linear-gradient(to right, rgb(241, 75, 103), lightblue);
   transition: color 0.3s ease-in-out;
+  
+  /* cursor: pointer; */
+  
   
 }
 
 /* Responsive styles */
-@media screen and (max-width: 768px) {
+
+ @media screen and (max-width: 768px) {
   
   .hamburger {
-    display: block; /* Show on smaller screens */
+    display: block; 
   }
 
   .nav-links {
-    display: none; /* Hide by default on smaller screens */
+    display: none; 
     flex-direction: column;
-    position: absolute;
+    /* position: absolute; */
     top: 60px;
     left: 0;
     width: 100%;
@@ -87,7 +103,7 @@
   .nav-links a {
     padding: 1rem;
     text-align: center;
-    /* border-bottom: 1px solid #555; */
+    border-bottom: 1px solid #555;
     
   }
-}
+} 
