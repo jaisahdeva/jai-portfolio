@@ -1,5 +1,5 @@
-// src/Navbar.jsx
 import React, { useState } from 'react';
+import { Link } from 'react-scroll';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -9,8 +9,13 @@ const Navbar = () => {
     setIsNavOpen(!isNavOpen);
   };
 
+  const handleLinkClick = () => {
+    
+    
+  };
+
   return (
-    <nav className={`navbar`}>
+    <nav className="navbar">
       <div className="logo">Jai Sachdeva</div>
 
       {/* Hamburger icon for mobile */}
@@ -22,13 +27,10 @@ const Navbar = () => {
 
       {/* Navigation links */}
       <div className={`nav-links ${isNavOpen ? 'open' : ''}`}>
-       
-       
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
-
+        <Link to="home" > Home </Link>
+        <Link to="about"> About </Link>
+        <Link> Portfolio </Link>
+        <Link> Contact </Link>
       </div>
     </nav>
   );
